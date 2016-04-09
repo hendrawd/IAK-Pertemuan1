@@ -1,9 +1,13 @@
 package iak.pertemuan1;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,5 +37,25 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void button1Click(View view) {
+        Toast.makeText(this, "Hallo dari button 1", Toast.LENGTH_LONG).show();
+    }
+
+    AlertDialog alertDialog;
+
+    public void button2Click(View view) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Click dari button 2");
+        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                alertDialog.dismiss();
+            }
+        });
+        builder.setCancelable(false);
+        alertDialog = builder.create();
+        alertDialog.show();
     }
 }

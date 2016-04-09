@@ -51,12 +51,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="button1Click"
             android:text="@string/button1" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="button2Click"
             android:text="@string/button2" />
     </LinearLayout>
 
