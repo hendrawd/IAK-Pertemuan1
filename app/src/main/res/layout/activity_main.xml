@@ -93,4 +93,20 @@
         android:text="Register"
         android:textColor="@android:color/white" />
 
+    <TextView
+        android:id="@+id/text_view_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="I've forgotten my password?" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/text_view_forgot_password"
+        android:layout_centerHorizontal="true"
+        android:text="Log in"
+        android:textStyle="bold" />
+
 </RelativeLayout>
