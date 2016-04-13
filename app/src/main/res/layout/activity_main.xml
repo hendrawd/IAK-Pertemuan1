@@ -23,7 +23,7 @@
         android:layout_below="@id/image_view"
         android:layout_centerHorizontal="true"
         android:text="Chatt"
-        android:textColor="#50ff14"
+        android:textColor="@color/text_color"
         android:textSize="32sp"
         android:textStyle="bold" />
 
@@ -34,7 +34,7 @@
         android:layout_below="@id/text_view_judul"
         android:layout_centerHorizontal="true"
         android:text="Simple mobile chat and note"
-        android:textColor="#50ff14"
+        android:textColor="@color/text_color"
         android:textSize="16sp"
         android:textStyle="normal" />
 
